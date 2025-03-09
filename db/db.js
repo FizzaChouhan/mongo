@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 import 'dotenv/config'
 import chalk from "chalk";
-const  url=process.env.MONGODB_URL;
-
+const  url=process.env.MONGODB_URL
+   
 const  connectToDb=async()=>{
     try {
         await mongoose.connect(url, {dbName:"ecommerce"})
